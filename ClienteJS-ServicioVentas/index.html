@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <title>Servicio de Ventas</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="row"
+            style="font-style:oblique; font-family:Georgia, 'Times New Roman'; display: flex; justify-content: center; background-color:darkcyan; color: aliceblue;">
+            <h4>Registro de Ventas</h4>
+        </div>
+        <div class="row">
+            <div class="col s2">
+                <label for="">
+                    Folio <input type="text" id="folio">
+                </label>
+            </div>
+            <div class="col s4">
+                <label for="">
+                    Cliente <input type="text" id="cliente">
+                </label>
+            </div>
+            <div class="col s4">
+                <label for="">
+                    Empresa <input type="text" id="empresa">
+                </label>
+            </div>
+            <div class="col s2">
+                <label for="">
+                    Fecha <input type="date" id="fecha">
+                </label>
+            </div>
+            <div class="col s2">
+                <label for="">
+                    Monto <input type="number" id="monto">
+                </label>
+            </div>
+            <div class="col s4">
+                <label for="">
+                    Descripcion <input type="text" id="descripcion">
+                </label>
+            </div>
+            <div class="col s2">
+                <button id="guardar" class="btn btn-warning">
+                    Guardar
+                </button>
+            </div>
+        </div>
+        <div class="card" style="margin-right: 10px; margin-left: 10px;">
+            <div class="card-header" style="background-color:darkcyan; color: aliceblue; padding-top: 10px;">
+                <span> <i class="bi bi-table me-2" style="margin-left: 10px; font-size:large;"></i></span> LISTADO DE
+                VENTAS
+            </div>
+            <div class="card-body">
+                <div id="contentTable">
+                    <table id="tableData">
+                        <thead style="">
+                            <tr>
+                                <th>#</th>
+                                <th>Folio</th>
+                                <th>Cliente</th>
+                                <th>Empresa</th>
+                                <th>Fecha</th>
+                                <th>Monto</th>
+                                <th>Descripcion</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/clienteHttp.js"></script>
+    <script src="js/domMain.js"></script>
+    <script src="js/domElements.js"></script>
+</body>
+
+</html>
